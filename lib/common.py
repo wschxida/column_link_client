@@ -14,10 +14,10 @@ from requests.compat import urljoin
 import pymysql
 import re
 import tldextract
-import reject_domain
-import reject_junkword
-import custom_str_invalid
-import custom_keyword_score
+import lib.reject_domain as reject_domain
+import lib.reject_junkword as reject_junkword
+import lib.custom_str_invalid as custom_str_invalid
+import lib.custom_keyword_score as custom_keyword_score
 
 
 def get_token(md5str):
